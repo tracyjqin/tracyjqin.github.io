@@ -1,4 +1,7 @@
 import React from "react";
+import GitHub from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 const InfoCard = () => {
   const LabelBar = {
@@ -24,6 +27,10 @@ const InfoCard = () => {
     width: "85px",
     borderRadius: "10px",
     border: "5px double white",
+    display: "flex",
+    justifyContent: "center",
+    flexDirection: "column",
+    alignItems: "center",
   };
 
   const ResButton = {
@@ -136,9 +143,16 @@ const InfoCard = () => {
               }}
             >
               <div style={{ display: "flex" }}>
-                <div style={CSButton}>LinkedIn</div>
-                <div style={CSButton}>GitHub</div>
-                <div style={CSButton}>Resume</div>
+                <div style={CSButton}>
+                  <LinkedInIcon sx={{ fontSize: 40 }} />
+                  LinkedIn
+                </div>
+                <div style={CSButton}>
+                  <GitHub sx={{ fontSize: 40 }} /> GitHub
+                </div>
+                <div style={CSButton}>
+                  <DescriptionIcon sx={{ fontSize: 40 }} /> Resume
+                </div>
               </div>
 
               <div style={Flex}>
