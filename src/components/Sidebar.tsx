@@ -1,0 +1,42 @@
+import React from "react";
+import HomeIcon from "@mui/icons-material/Home";
+import WorkIcon from "@mui/icons-material/Work";
+import FolderIcon from "@mui/icons-material/Folder";
+
+interface SidebarProps {
+  scrollToSection: (ref: React.RefObject<HTMLDivElement> | null) => void;
+  sectionRefs: React.RefObject<HTMLDivElement>[];
+}
+
+const Sidebar: React.FC<SidebarProps> = ({ scrollToSection, sectionRefs }) => {
+  const handleScrollToSection = (index: number) => {
+    scrollToSection(sectionRefs[index]);
+  };
+
+  const icon = {
+    fontSize: "40px",
+    cursor: "pointer",
+    color: "#9292B3",
+  };
+
+  return (
+    <div
+      style={{
+        height: "100vh",
+        width: "100px",
+        position: "fixed",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        gap: "15px",
+      }}
+    >
+      <HomeIcon style={icon} onClick={() => handleScrollToSection(0)} />
+      <WorkIcon style={icon} onClick={() => handleScrollToSection(1)} />
+      <FolderIcon style={icon} onClick={() => handleScrollToSection(2)} />
+    </div>
+  );
+};
+
+export default Sidebar;
