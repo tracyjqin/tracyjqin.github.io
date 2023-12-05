@@ -3,17 +3,9 @@ import React from "react";
 const Projects = () => {
   return (
     <>
-      <div
-        style={{
-          height: "100vh",
-          width: "100vw",
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        Projects
+      <div className="block">
+        <h1 style={{ fontSize: "3rem" }}>Projects</h1>
+        Check again soon...
       </div>
     </>
   );
