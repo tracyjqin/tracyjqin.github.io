@@ -4,8 +4,8 @@ const Projects = () => {
   return (
     <>
       <div className="block">
-        <h1 style={{ fontSize: "3rem" }}>Projects</h1>
-        Check again soon...
+        <h1>Projects</h1>
+        <p>Check again soon...</p>
       </div>
     </>
   );

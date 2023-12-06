@@ -8,12 +8,13 @@ const AboutMe = () => {
     <>
       <div className="block">
         <div className="image-container">
-          <div
+          <img
+            src="/memojitracy.png"
+            alt="Tracy"
             style={{
-              backgroundImage: 'url("/tracy.png")',
-              backgroundSize: "cover",
               width: "200px",
               height: "200px",
+              objectFit: "cover",
               borderRadius: "50%",
             }}
           />

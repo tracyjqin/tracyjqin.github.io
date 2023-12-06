@@ -4,31 +4,12 @@ const AboutMe = () => {
   return (
     <>
       <div className="block grey">
-        <div
-          style={{
-            display: "flex",
-            width: "60%",
-            justifyContent: "center",
-            alignItems: "center",
-            gap: "75px",
-          }}
-        >
+        <div className="about-me">
           <div className="image-container">
-            <img
-              src="/tracy2.png"
-              alt="Tracy"
-              style={{
-                width: "350px",
-                height: "350px",
-                objectFit: "cover",
-                borderRadius: "50%",
-              }}
-            />
+            <img src="/memojitracy2.png" alt="Tracy" className="profile-img" />
           </div>
           <div>
-            <h1 style={{ fontSize: "3rem", marginBottom: "0.5rem" }}>
-              Hi, I'm Tracy &#128040;
-            </h1>
+            <h1>Hi, I'm Tracy &#128040;</h1>
             <p>
               I'm a final year B. Commerce (Finance) / Computer Science student
               at UNSW Sydney. I am interning at SafetyCulture as a Software

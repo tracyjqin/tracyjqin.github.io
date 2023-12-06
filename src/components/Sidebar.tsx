@@ -20,18 +20,7 @@ const Sidebar: React.FC<SidebarProps> = ({ scrollToSection, sectionRefs }) => {
   };
 
   return (
-    <div
-      style={{
-        height: "100vh",
-        width: "100px",
-        position: "fixed",
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "15px",
-      }}
-    >
+    <div className="sidebar">
       <HomeIcon style={icon} onClick={() => handleScrollToSection(0)} />
       <Person2Icon style={icon} onClick={() => handleScrollToSection(1)} />
       {/* <WorkIcon style={icon} onClick={() => handleScrollToSection(2)} /> */}
