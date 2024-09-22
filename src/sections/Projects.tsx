@@ -3,9 +3,9 @@ import React from "react";
 const Projects = () => {
   return (
     <>
-      <div className="block">
+      <div className="block grey">
         <h1>Projects</h1>
-        <p>Check again soon...</p>
+        <p>Cooking...</p>
       </div>
     </>
   );

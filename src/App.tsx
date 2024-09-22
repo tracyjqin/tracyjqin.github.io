@@ -1,15 +1,15 @@
 import React, { useRef } from "react";
-import Sidebar from "./components/Sidebar";
-import Home from "./components/Home";
-import AboutMe from "./components/AboutMe";
-// import Experience from "./components/Experience";
-import Projects from "./components/Projects";
+import Sidebar from "./sections/Sidebar";
+import Home from "./sections/Home";
+import AboutMe from "./sections/AboutMe";
+import Experience from "./sections/Experience";
+import Projects from "./sections/Projects";
 
 const App: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
   const sectionRef2 = useRef<HTMLDivElement>(null);
   const sectionRef3 = useRef<HTMLDivElement>(null);
-  // const sectionRef4 = useRef<HTMLDivElement>(null);
+  const sectionRef4 = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement> | null) => {
     if (ref && ref.current) {
@@ -21,8 +21,8 @@ const App: React.FC = () => {
     <div style={{ display: "flex", overflow: "hidden" }}>
       <Sidebar
         scrollToSection={scrollToSection}
-        sectionRefs={[sectionRef1, sectionRef2, sectionRef3]}
-        // sectionRefs={[sectionRef1, sectionRef2, sectionRef3, sectionRef4]}
+        // sectionRefs={[sectionRef1, sectionRef2, sectionRef3]}
+        sectionRefs={[sectionRef1, sectionRef2, sectionRef3, sectionRef4]}
       />
 
       <div style={{ width: "100vw" }}>
@@ -32,15 +32,15 @@ const App: React.FC = () => {
         <div ref={sectionRef2}>
           <AboutMe />
         </div>
-        {/* <div ref={sectionRef3}>
+        <div ref={sectionRef3}>
           <Experience />
         </div>
         <div ref={sectionRef4}>
           <Projects />
-        </div> */}
-        <div ref={sectionRef3}>
-          <Projects />
         </div>
+        {/* <div ref={sectionRef3}>
+          <Projects />
+        </div> */}
       </div>
     </div>
   );
