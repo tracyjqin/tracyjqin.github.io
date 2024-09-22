@@ -3,15 +3,16 @@ import "../index.css";
 import Card from "../components/Card";
 
 const Experience = () => {
-  const [modalOpen, setModalOpen] = useState<string | null>(null);
+  // TODO: for later use when adding info about internships
+  // const [modalOpen, setModalOpen] = useState<string | null>(null);
 
-  const openModal = (company: string) => {
-    setModalOpen(company);
-  };
+  // const openModal = (company: string) => {
+  //   setModalOpen(company);
+  // };
 
-  const closeModal = () => {
-    setModalOpen(null);
-  };
+  // const closeModal = () => {
+  //   setModalOpen(null);
+  // };
 
   return (
     <>
