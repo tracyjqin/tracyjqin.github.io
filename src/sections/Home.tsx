@@ -25,13 +25,17 @@ const AboutMe = () => {
           <a
             href={"https://www.linkedin.com/in/tracyjqin/"}
             className="linkedin-link"
+            target="_blank"
           >
             <LinkedInIcon sx={{ fontSize: 40 }} />
           </a>
-          <a href={"https://github.com/tracyjqin"} className="linkedin-link">
+          <a
+            href={"https://github.com/tracyjqin"}
+            className="linkedin-link"
+            target="_blank"
+          >
             <GitHub sx={{ fontSize: 40 }} />
           </a>
-          {/* <DescriptionIcon sx={{ fontSize: 40 }} /> */}
         </div>
       </div>
     </>

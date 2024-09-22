@@ -21,7 +21,6 @@ const App: React.FC = () => {
     <div style={{ display: "flex", overflow: "hidden" }}>
       <Sidebar
         scrollToSection={scrollToSection}
-        // sectionRefs={[sectionRef1, sectionRef2, sectionRef3]}
         sectionRefs={[sectionRef1, sectionRef2, sectionRef3, sectionRef4]}
       />
 
@@ -38,9 +37,6 @@ const App: React.FC = () => {
         <div ref={sectionRef4}>
           <Projects />
         </div>
-        {/* <div ref={sectionRef3}>
-          <Projects />
-        </div> */}
       </div>
     </div>
   );
