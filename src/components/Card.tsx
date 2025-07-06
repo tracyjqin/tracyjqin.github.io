@@ -12,8 +12,8 @@ const Card: React.FC<CardProps> = ({ company, date, description, image }) => {
     <div>
       <div className="card">
         <h2>{company}</h2>
-        <h4 style={{ margin: "-5px" }}>{description}</h4>
-        <p>{date}</p>
+        <a style={{ margin: "-5px", fontWeight: "" }}>{description}</a>
+        <p style={{ fontSize: "12px" }}>{date}</p>
         <img
           src={image}
           style={{ width: "90%", height: "60%", objectFit: "cover" }}

@@ -1,0 +1,22 @@
+{
+    "experience": [
+        {
+            "company": "CommBank",
+            "date": "Feb '25 - Present",
+            "description": "Technology Graduate (Engineering)",
+            "image": "/commbank-logo.jpg"
+        },
+        {
+            "company": "SafetyCulture",
+            "date": "Dec '23 - Feb '24",
+            "description": "Software Engineering Intern",
+            "image": "/SafetyCulture.png"
+        },
+        {
+            "company": "Deloitte Digital",
+            "date": "Nov '22 - Feb '23",
+            "description": "Digital Technology and Engineering Intern",
+            "image": "/DeloitteDigital.png"
+        }
+    ]
+}

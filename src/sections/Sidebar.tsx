@@ -1,8 +1,4 @@
 import React from "react";
-import HomeIcon from "@mui/icons-material/Home";
-import Person2Icon from "@mui/icons-material/Person2";
-import WorkIcon from "@mui/icons-material/Work";
-import FolderIcon from "@mui/icons-material/Folder";
 
 interface SidebarProps {
   scrollToSection: (ref: React.RefObject<HTMLDivElement> | null) => void;
@@ -14,17 +10,35 @@ const Sidebar: React.FC<SidebarProps> = ({ scrollToSection, sectionRefs }) => {
     scrollToSection(sectionRefs[index]);
   };
 
-  const icon = {
-    fontSize: "40px",
+  const text = {
     cursor: "pointer",
+    textDecoration: "none",
+    color: "inherit",
   };
+
+  const headers = ["Home", "About Me", "Experience", "Projects"];
 
   return (
     <div className="sidebar">
-      <HomeIcon style={icon} onClick={() => handleScrollToSection(0)} />
-      <Person2Icon style={icon} onClick={() => handleScrollToSection(1)} />
-      <WorkIcon style={icon} onClick={() => handleScrollToSection(2)} />
-      <FolderIcon style={icon} onClick={() => handleScrollToSection(3)} />
+      <img
+        src="/starfish.ico"
+        alt="Starfish Icon"
+        className="icon"
+        onClick={() => handleScrollToSection(0)}
+      />
+      <div className="panel">
+        {headers.map((idx) => (
+          <a href={`#${idx.toLowerCase().replace(" ", "")}`}
+            onClick={(e) => {
+              e.preventDefault();
+              handleScrollToSection(headers.indexOf(idx));
+            }}
+            key={idx}
+            style={text}>
+            {idx}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };

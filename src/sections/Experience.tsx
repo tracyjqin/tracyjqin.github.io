@@ -1,6 +1,20 @@
 import React, { useState } from "react";
 import "../index.css";
 import Card from "../components/Card";
+import dataImport from "../experience.json";
+
+interface ExperienceItem {
+  company: string;
+  date: string;
+  description: string;
+  image: string;
+}
+
+interface ExperienceData {
+  experience: ExperienceItem[];
+}
+
+const data = dataImport as unknown as ExperienceData;
 
 const Experience = () => {
   // TODO: for later use when adding info about internships
@@ -19,18 +33,15 @@ const Experience = () => {
       <div className="block">
         <h1>Experience</h1>
         <div className="experience-block">
-          <Card
-            company="SafetyCulture"
-            date="Dec '23 - Feb '24"
-            description="Software Engineering Intern"
-            image="/SafetyCulture.png"
-          />
-          <Card
-            company="Deloitte Digital"
-            date="Nov '22 - Feb '23"
-            description="Digital Technology and Engineering Intern"
-            image="/DeloitteDigital.png"
-          />
+          {data.experience.map((exp: ExperienceItem, index: number) => (
+            <Card
+              key={index}
+              company={exp.company}
+              date={exp.date}
+              description={exp.description}
+              image={exp.image}
+            />
+          ))}
         </div>
       </div>
     </>
