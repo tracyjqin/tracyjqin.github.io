@@ -10,10 +10,7 @@ const Sidebar: React.FC<SidebarProps> = ({ scrollToSection, sectionRefs }) => {
     scrollToSection(sectionRefs[index]);
   };
 
-  const headers = ["Home", "Experience"];
-
-
-  // const headers = ["Home", "Experience", "Projects"];
+  const headers = ["Home", "Experience", "Projects"];
 
   return (
     <div className="h-16 w-full bg-[#07132A]/60 flex items-center justify-between px-6 border-b-2 border-[#112050]/50 backdrop-blur-md" >

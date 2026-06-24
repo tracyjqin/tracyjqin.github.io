@@ -8,7 +8,6 @@ const App: React.FC = () => {
   const sectionRef1 = useRef<HTMLDivElement>(null);
   const sectionRef2 = useRef<HTMLDivElement>(null);
   const sectionRef3 = useRef<HTMLDivElement>(null);
-  const sectionRef4 = useRef<HTMLDivElement>(null);
 
   const scrollToSection = (ref: React.RefObject<HTMLDivElement> | null) => {
     if (ref && ref.current) {
@@ -37,9 +36,9 @@ const App: React.FC = () => {
           <Experience />
         </div>
 
-        {/* <div ref={sectionRef3} className="h-[calc(100vh-64px)] w-full scroll-mt-16">
+        <div ref={sectionRef3} className="h-[calc(100vh-64px)] w-full scroll-mt-16">
           <Projects />
-        </div> */}
+        </div>
       </div>
     </div>
   );
