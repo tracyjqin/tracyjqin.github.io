@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import "../index.css";
-import Card from "../components/Card";
 import dataImport from "../experience.json";
 
 interface ExperienceItem {
@@ -33,7 +31,7 @@ const Experience = () => {
       <div className="block">
         <h1>Experience</h1>
         <div className="experience-block">
-          {data.experience.map((exp: ExperienceItem, index: number) => (
+          {/* {data.experience.map((exp: ExperienceItem, index: number) => (
             <Card
               key={index}
               company={exp.company}
@@ -41,7 +39,7 @@ const Experience = () => {
               description={exp.description}
               image={exp.image}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     </>

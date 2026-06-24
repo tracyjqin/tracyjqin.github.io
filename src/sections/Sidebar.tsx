@@ -16,29 +16,36 @@ const Sidebar: React.FC<SidebarProps> = ({ scrollToSection, sectionRefs }) => {
     color: "inherit",
   };
 
-  const headers = ["Home", "About Me", "Experience", "Projects"];
+  const headers = ["Home"];
+
+
+  // const headers = ["Home", "Experience", "Projects"];
 
   return (
-    <div className="sidebar">
-      <img
-        src="/starfish.ico"
-        alt="Starfish Icon"
-        className="icon"
-        onClick={() => handleScrollToSection(0)}
-      />
-      <div className="panel">
+    <div className="h-16 w-full bg-[#07132A]/60 flex items-center justify-between px-6 border-b-2 border-[#112050]/50 backdrop-blur-md" >
+      <div className="flex flex-row gap-5 items-center justify-center">
+        <img
+          src="/starfish.ico"
+          alt="Starfish Icon"
+          className="icon"
+          onClick={() => handleScrollToSection(0)}
+        />
+        <span className="text-white">Tracy Qin</span>
+      </div>
+
+      <div className="flex flex-row gap-5 text-white">
         {headers.map((idx) => (
-          <a href={`#${idx.toLowerCase().replace(" ", "")}`}
+          <button
             onClick={(e) => {
               e.preventDefault();
               handleScrollToSection(headers.indexOf(idx));
             }}
-            key={idx}
-            style={text}>
+          >
             {idx}
-          </a>
+          </button>
         ))}
       </div>
+
     </div>
   );
 };
