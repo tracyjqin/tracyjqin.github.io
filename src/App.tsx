@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import Sidebar from "./sections/Sidebar";
 import Home from "./sections/Home";
-import AboutMe from "./sections/AboutMe";
 import Experience from "./sections/Experience";
 import Projects from "./sections/Projects";
 
@@ -33,11 +32,12 @@ const App: React.FC = () => {
         <div ref={sectionRef1} className="h-[calc(100vh-64px)] w-full scroll-mt-16">
           <Home />
         </div>
-        {/* 
+
         <div ref={sectionRef2} className="h-[calc(100vh-64px)] w-full scroll-mt-16">
           <Experience />
         </div>
-        <div ref={sectionRef3} className="h-[calc(100vh-64px)] w-full scroll-mt-16">
+
+        {/* <div ref={sectionRef3} className="h-[calc(100vh-64px)] w-full scroll-mt-16">
           <Projects />
         </div> */}
       </div>

@@ -15,34 +15,36 @@ interface ExperienceData {
 const data = dataImport as unknown as ExperienceData;
 
 const Experience = () => {
-  // TODO: for later use when adding info about internships
-  // const [modalOpen, setModalOpen] = useState<string | null>(null);
-
-  // const openModal = (company: string) => {
-  //   setModalOpen(company);
-  // };
-
-  // const closeModal = () => {
-  //   setModalOpen(null);
-  // };
-
   return (
-    <>
-      <div className="block">
-        <h1>Experience</h1>
-        <div className="experience-block">
-          {/* {data.experience.map((exp: ExperienceItem, index: number) => (
-            <Card
-              key={index}
-              company={exp.company}
-              date={exp.date}
-              description={exp.description}
-              image={exp.image}
-            />
-          ))} */}
-        </div>
+    <div className="flex flex-col items-center gap-10 w-full min-h-[calc(100vh-4rem)] justify-center">
+
+      <h1 className="text-white font-code text-2xl w-3/4 text-left max-w-4xl">
+        Experience
+      </h1>
+
+      <div className="flex flex-col gap-6 items-center w-full">
+        {data.experience.map((exp: ExperienceItem, index: number) => (
+          <div
+            key={index}
+            className="flex flex-col bg-[#0E2654]/80 w-3/4 max-w-4xl p-4 border border-[#0E2654]/50 text-left rounded-md"
+          >
+            <div className="flex gap-2">
+              <span className="text-blue-200 text-lg font-code">
+                {exp.description}
+              </span>
+
+              <span className="text-white">
+                @ {exp.company}
+              </span>
+            </div>
+
+            <span className="text-white">
+              {exp.date}
+            </span>
+          </div>
+        ))}
       </div>
-    </>
+    </div>
   );
 };
 

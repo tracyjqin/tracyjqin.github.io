@@ -10,13 +10,7 @@ const Sidebar: React.FC<SidebarProps> = ({ scrollToSection, sectionRefs }) => {
     scrollToSection(sectionRefs[index]);
   };
 
-  const text = {
-    cursor: "pointer",
-    textDecoration: "none",
-    color: "inherit",
-  };
-
-  const headers = ["Home"];
+  const headers = ["Home", "Experience"];
 
 
   // const headers = ["Home", "Experience", "Projects"];

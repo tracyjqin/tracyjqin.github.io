@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import GitHub from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-// import DescriptionIcon from "@mui/icons-material/Description";
 
 const AboutMe = () => {
   const Typewriter = ({ text }: { text: string }) => {
@@ -30,42 +29,44 @@ const AboutMe = () => {
   };
 
   return (
-    <div className="flex flex-row h-full w-full items-center justify-center gap-56">
-      <div className="flex flex-col text-left gap-10">
-        <h1 className="flex flex-col text-left text-white h-12 font-code">
-          <span className="text-3xl">Hi, I'm</span>
-          <Typewriter text="Tracy Qin" />
-        </h1>
+    <div className="w-full min-h-[calc(100vh-4rem)] flex items-center justify-center">
+      <div className="flex flex-row items-center justify-between w-full max-w-4xl px-6 py-20">
+        <div className="flex flex-col text-left gap-10">
+          <h1 className="flex flex-col text-left text-white h-12 font-code">
+            <span className="text-3xl">Hi, I'm</span>
+            <Typewriter text="Tracy Qin" />
+          </h1>
 
-        <div className='flex flex-col'>
-          <span className="text-white pt-5">Software Engineer @ CommBank</span>
-          <span className="text-white">Prev. Intern @ SafetyCulture, Deloitte Digital</span>
+          <div className='flex flex-col'>
+            <span className="text-white pt-5">Software Engineer @ CommBank</span>
+            <span className="text-white">Prev. Intern @ SafetyCulture, Deloitte Digital</span>
+          </div>
+
+          <div className="flex flex-row gap-5 text-white relative z-50">
+            <a
+              href={'https://www.linkedin.com/in/tracyjqin/'}
+              className="linkedin-link"
+              target="_blank"
+            >
+              <LinkedInIcon sx={{ fontSize: 40 }} />
+            </a>
+            <a
+              href={'https://github.com/tracyjqin'}
+              className="linkedin-link"
+              target="_blank"
+            >
+              <GitHub sx={{ fontSize: 40 }} />
+            </a>
+          </div>
         </div>
 
-        <div className="flex flex-row gap-5 text-white">
-          <a
-            href={'https://www.linkedin.com/in/tracyjqin/'}
-            className="linkedin-link"
-            target="_blank"
-          >
-            <LinkedInIcon sx={{ fontSize: 40 }} />
-          </a>
-          <a
-            href={'https://github.com/tracyjqin'}
-            className="linkedin-link"
-            target="_blank"
-          >
-            <GitHub sx={{ fontSize: 40 }} />
-          </a>
-        </div>
-      </div>
-
-      <img
-        src="/memojitracy.png"
-        alt="Tracy"
-        className="w-52 h-52 object-cover rounded-full"
-      />
-    </div >
+        <img
+          src="/memojitracy.png"
+          alt="Tracy"
+          className="w-52 h-52 object-cover rounded-full"
+        />
+      </div >
+    </div>
   );
 };
 
