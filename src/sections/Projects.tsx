@@ -28,7 +28,7 @@ const Projects = () => {
           </div>
           <div>
             <button
-              onClick={() => navigate("/sonny-shelf")}
+              onClick={() => window.location.href = "https://tracyjqin.github.io/sonny-shelf/"}
               className=" relative z-50 text-white text-sm px-3 py-1 rounded-md border border-white hover:bg-blue-900 transition cursor-pointer"
             >
               View here
