@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?&family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Google+Sans+Code:ital,wght,MONO@0,300..800,1;1,300..800,1&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swa');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: 'Source Sans 3', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   background: #07132a;
 }
 

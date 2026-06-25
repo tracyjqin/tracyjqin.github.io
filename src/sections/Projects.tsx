@@ -1,9 +1,6 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
-  const navigate = useNavigate();
-
   return (
     <div className="flex flex-col items-center gap-10 w-full min-h-[calc(100vh-4rem)] justify-center">
 
