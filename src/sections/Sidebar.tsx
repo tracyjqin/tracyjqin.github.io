@@ -27,6 +27,7 @@ const Sidebar: React.FC<SidebarProps> = ({ scrollToSection, sectionRefs }) => {
       <div className="flex flex-row gap-5 text-white">
         {headers.map((idx) => (
           <button
+            key={idx}
             onClick={(e) => {
               e.preventDefault();
               handleScrollToSection(headers.indexOf(idx));

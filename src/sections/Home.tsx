@@ -32,7 +32,7 @@ const AboutMe = () => {
 
   return (
     <div className="w-full min-h-[calc(100vh-10rem)] flex flex-col items-center justify-center">
-      <div className="flex flex-row items-center justify-between w-full max-w-4xl px-6 py-20">
+      <div className="flex flex-row items-center justify-between w-full max-w-4xl px-6 py-12">
         <div className="flex flex-col text-left gap-10">
           <h1 className="flex flex-col text-left text-white h-12 font-code">
             <span className="text-3xl">Hi, I'm</span>
@@ -69,10 +69,11 @@ const AboutMe = () => {
           alt="Tracy"
           className="w-52 h-52 object-cover rounded-full"
         />
-
       </div >
-      <div className="w-3/4 bg-white h-px max-w-4xl" />
-      <div className="flex gap-2 pt-5 justify-start">
+
+      <div className="w-3/4 bg-blue-900/60 h-px max-w-4xl backdrop-blur-md" />
+
+      <div className="flex gap-2 pt-6 justify-start">
         {technology.map((idx) =>
           <div className='border border-blue-200 bg-blue-950/60 rounded-full pl-2 pr-2 backdrop-blur-md'>
             <span className="text-blue-200 text-xs font-code">{idx}</span>
