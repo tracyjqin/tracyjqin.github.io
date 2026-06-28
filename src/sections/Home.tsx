@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import GitHub from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import Lozenge from '../components/Lozenge';
 
 const AboutMe = () => {
   const technology = ["TypeScript/JavaScript", "React", "Next.js", "HTML/CSS", "TailwindCSS", "C#", "YAML", "Java", "Python"];
@@ -75,9 +76,7 @@ const AboutMe = () => {
 
       <div className="flex gap-2 pt-6 justify-start">
         {technology.map((idx) =>
-          <div className='border border-blue-200 bg-blue-950/60 rounded-full pl-2 pr-2 backdrop-blur-md'>
-            <span className="text-blue-200 text-xs font-code">{idx}</span>
-          </div>
+          <Lozenge text={idx} />
         )}
       </div>
     </div>

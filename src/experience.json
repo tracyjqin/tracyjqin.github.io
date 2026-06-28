@@ -2,21 +2,42 @@
     "experience": [
         {
             "company": "CommBank",
-            "date": "Feb '25 - Present",
-            "description": "Technology Graduate (Engineering)",
-            "image": "/commbank-logo.jpg"
+            "date": "Feb 2025 - Present",
+            "role": "Technology Graduate (Engineering)",
+            "image": "/commbank-logo.jpg",
+            "description": "Rotated across three different teams and tried some new things.",
+            "technologies": [
+                "TypeScript",
+                "React",
+                "Next.js",
+                "C#",
+                "Github Actions (CI/CD)",
+                "Swift",
+                "Appium"
+            ]
         },
         {
             "company": "SafetyCulture",
-            "date": "Dec '23 - Feb '24",
-            "description": "Software Engineering Intern",
-            "image": "/SafetyCulture.png"
+            "date": "Dec 2023 - Feb 2024",
+            "role": "Software Engineering Intern",
+            "image": "/SafetyCulture.png",
+            "description": "Dabbled in some frontend work. Learnt a lot about software development and had the opportunity to work with some incredibly talented people. Grateful for my experience and lost a lot of money to Yo-Chi here.",
+            "technologies": [
+                "TypeScript",
+                "React",
+                "Redux"
+            ]
         },
         {
             "company": "Deloitte Digital",
-            "date": "Nov '22 - Feb '23",
-            "description": "Digital Technology and Engineering Intern",
-            "image": "/DeloitteDigital.png"
+            "date": "Nov 2022 - Feb 2023",
+            "role": "Digital Technology and Engineering Intern",
+            "image": "/DeloitteDigital.png",
+            "description": "First corporate job helping build out an automated UI testing framework.",
+            "technologies": [
+                "JavaScript",
+                "Gherkin"
+            ]
         }
     ]
 }

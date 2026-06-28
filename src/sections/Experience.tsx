@@ -1,11 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import dataImport from "../experience.json";
+import Lozenge from "../components/Lozenge";
 
 interface ExperienceItem {
   company: string;
   date: string;
-  description: string;
+  role: string;
   image: string;
+  description: string;
+  technologies: string[];
 }
 
 interface ExperienceData {
@@ -26,21 +29,33 @@ const Experience = () => {
         {data.experience.map((exp: ExperienceItem, index: number) => (
           <div
             key={index}
-            className="flex flex-col bg-[#0E2654]/80 w-3/4 max-w-4xl p-4 border border-[#0E2654]/50 text-left rounded-md"
+            className="flex flex-col bg-blue-950/60 w-3/4 max-w-4xl p-4 border border-blue-200 text-left rounded-md"
           >
-            <div className="flex gap-2">
-              <span className="text-blue-200 text-lg font-code">
-                {exp.description}
-              </span>
+            <div className="flex justify-between">
+              <div className="flex gap-4 items-center">
+                <span className="text-blue-200 text-lg font-code">
+                  {exp.role}
+                </span>
 
-              <span className="text-white">
-                @ {exp.company}
+                <span className="text-white">
+                  @ {exp.company}
+                </span>
+              </div>
+
+              <span className="text-white text-sm">
+                {exp.date}
               </span>
             </div>
 
-            <span className="text-white">
-              {exp.date}
+            <span className="text-white text-sm pt-4 leading-6">
+              {exp.description}
             </span>
+
+            <div className="flex gap-2 pt-4 justify-start">
+              {exp.technologies.map((idx) =>
+                <Lozenge text={idx} />
+              )}
+            </div>
           </div>
         ))}
       </div>
