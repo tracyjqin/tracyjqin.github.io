@@ -1,10 +1,13 @@
 import React from "react";
 import dataImport from "../projects.json";
+import Lozenge from "../components/Lozenge";
 
 interface ProjectsItem {
+  icon: string;
   name: string;
   description: string;
   link: string;
+  technologies: string[];
 }
 
 interface ProjectsData {
@@ -26,9 +29,12 @@ const Projects = () => {
       <div className="flex flex-col gap-6 items-center w-full">
 
         {data.projects.map((proj: ProjectsItem, index: number) => (
-          <div className="flex flex-row bg-[#0E2654]/80 w-3/4 max-w-4xl p-4 border border-[#0E2654]/50 text-left rounded-md items-center justify-between" key={index}>
+          <div className="flex flex-row bg-blue-950/60 w-3/4 max-w-4xl p-4 border border-blue-200 text-left rounded-md items-center justify-between" key={index}>
 
             <div className="flex flex-col gap-2">
+              <span className="text-4xl">
+                {proj.icon}
+              </span>
               <span className="text-blue-200 text-lg font-code">
                 {proj.name}
               </span>
@@ -36,6 +42,12 @@ const Projects = () => {
               <span className="text-white text-md">
                 {proj.description}
               </span>
+
+              <div className="flex gap-2 pt-4 justify-start">
+                {proj.technologies.map((idx) =>
+                  <Lozenge text={idx} />
+                )}
+              </div>
 
             </div>
             <div>
