@@ -20,7 +20,7 @@ const App: React.FC = () => {
       <div className="fixed inset-0">
         <div className="absolute top-20 left-1/2 h-96 w-96 -translate-x-1/2 rounded-full bg-blue-500/20 blur-3xl" />
       </div>
-      <div className="fixed top-0 left-0 w-full">
+      <div className="fixed top-0 left-0 w-full z-10">
         <Sidebar
           scrollToSection={scrollToSection}
           sectionRefs={[sectionRef1, sectionRef2, sectionRef3]}

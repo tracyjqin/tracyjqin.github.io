@@ -25,33 +25,33 @@ const Experience = () => {
         Experience
       </h1>
 
-      <div className="flex flex-col gap-6 items-center w-full">
+      <div className="flex flex-col gap-1 sm:gap-6 items-center w-full">
         {data.experience.map((exp: ExperienceItem, index: number) => (
           <div
             key={index}
             className="flex flex-col bg-blue-950/60 w-3/4 max-w-4xl p-4 border border-blue-200 text-left rounded-md"
           >
-            <div className="flex justify-between">
-              <div className="flex gap-4 items-center">
-                <span className="text-blue-200 text-lg font-code">
+            <div className="flex flex-col lg:flex-row sm:justify-between">
+              <div className="flex flex-col sm:flex-row gap-1 sm:gap-4 sm:items-center">
+                <span className="text-blue-200 lg:text-lg font-code">
                   {exp.role}
                 </span>
 
-                <span className="text-white">
+                <span className="text-white text-sm sm:text-base">
                   @ {exp.company}
                 </span>
               </div>
 
-              <span className="text-white text-sm">
+              <span className="text-white text-xs sm:text-sm pt-1">
                 {exp.date}
               </span>
             </div>
 
-            <span className="text-white text-sm pt-4 leading-6">
+            <span className="text-white text-xs sm:text-sm pt-1 sm:pt-4 leading-6">
               {exp.description}
             </span>
 
-            <div className="flex gap-2 pt-4 justify-start">
+            <div className="flex gap-2 pt-1 sm:pt-4 justify-start flex-wrap">
               {exp.technologies.map((idx) =>
                 <Lozenge text={idx} />
               )}
