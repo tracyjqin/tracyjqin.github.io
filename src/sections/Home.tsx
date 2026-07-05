@@ -33,7 +33,7 @@ const AboutMe = () => {
 
   return (
     <div className="w-full min-h-[calc(100vh-10rem)] flex flex-col items-center justify-center">
-      <div className="flex flex-row items-center justify-between w-full max-w-4xl px-6 py-12">
+      <div className="flex flex-col-reverse sm:flex-row items-center justify-between w-full max-w-4xl px-6 py-12 gap-10 xs:gap-0">
         <div className="flex flex-col text-left gap-10">
           <h1 className="flex flex-col text-left text-white h-12 font-code">
             <span className="text-3xl">Hi, I'm</span>
@@ -74,7 +74,7 @@ const AboutMe = () => {
 
       <div className="w-3/4 bg-blue-900/60 h-px max-w-4xl backdrop-blur-md" />
 
-      <div className="flex gap-2 pt-6 justify-start">
+      <div className="flex gap-2 pt-6 justify-start flex-wrap justify-center p-2">
         {technology.map((idx) =>
           <Lozenge text={idx} />
         )}
