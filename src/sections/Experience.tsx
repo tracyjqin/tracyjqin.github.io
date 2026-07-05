@@ -25,7 +25,7 @@ const Experience = () => {
         Experience
       </h1>
 
-      <div className="flex flex-col gap-1 sm:gap-6 items-center w-full">
+      <div className="flex flex-col gap-2 sm:gap-6 items-center w-full">
         {data.experience.map((exp: ExperienceItem, index: number) => (
           <div
             key={index}
@@ -47,11 +47,11 @@ const Experience = () => {
               </span>
             </div>
 
-            <span className="text-white text-xs sm:text-sm pt-1 sm:pt-4 leading-6">
+            <span className="text-white text-xs sm:text-sm pt-1 sm:pt-4 leading-5 sm:leading-6">
               {exp.description}
             </span>
 
-            <div className="flex gap-2 pt-1 sm:pt-4 justify-start flex-wrap">
+            <div className="flex gap-2 pt-2 sm:pt-4 justify-start flex-wrap">
               {exp.technologies.map((idx) =>
                 <Lozenge text={idx} />
               )}

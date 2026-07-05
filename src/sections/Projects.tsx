@@ -29,31 +29,31 @@ const Projects = () => {
       <div className="flex flex-col gap-6 items-center w-full">
 
         {data.projects.map((proj: ProjectsItem, index: number) => (
-          <div className="flex flex-row bg-blue-950/60 w-3/4 max-w-4xl p-4 border border-blue-200 text-left rounded-md items-center justify-between" key={index}>
+          <div className="flex flex-col sm:flex-row bg-blue-950/60 w-3/4 max-w-4xl p-4 border border-blue-200 text-left rounded-md items-center justify-between" key={index}>
 
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-1 sm:gap-2">
               <span className="text-4xl">
                 {proj.icon}
               </span>
-              <span className="text-blue-200 text-lg font-code">
+              <span className="text-blue-200 lg:text-lg font-code">
                 {proj.name}
               </span>
 
-              <span className="text-white text-md">
+              <span className="text-white text-xs sm:text-sm leading-5 sm:leading-6">
                 {proj.description}
               </span>
 
-              <div className="flex gap-2 pt-4 justify-start">
+              <div className="flex gap-2 pt-1 sm:pt-4 justify-start">
                 {proj.technologies.map((idx) =>
                   <Lozenge text={idx} />
                 )}
               </div>
 
             </div>
-            <div>
+            <div className="pt-4 sm:pt-0">
               <button
                 onClick={() => window.location.href = proj.link}
-                className=" relative z-50 text-white text-sm px-3 py-1 rounded-md border border-white hover:bg-blue-900 transition cursor-pointer"
+                className="relative z-50 text-white text-sm px-3 py-1 rounded-md border border-white hover:bg-blue-900 transition cursor-pointer w-28"
               >
                 View here
               </button>
