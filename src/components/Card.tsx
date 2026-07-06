@@ -13,10 +13,6 @@ interface CardProps {
 }
 
 export default function Card({ index, icon, name, date, company, description, technologies, button, link }: CardProps) {
-
-    // const expClasses = "flex flex-col sm:flex-row gap-1 sm:gap-4 sm:items-center";
-    // const projClasses = "flex sm:flex-row gap-1 sm:gap-4 sm:items-center";
-
     const expClasses = "flex flex-col lg:flex-row sm:justify-between";
     const projClasses = "flex flex-wrap sm:flex-row justify-between";
 

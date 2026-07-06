@@ -21,10 +21,10 @@ const Sidebar: React.FC<SidebarProps> = ({ scrollToSection, sectionRefs }) => {
           className="icon"
           onClick={() => handleScrollToSection(0)}
         />
-        <span className="text-white">Tracy Qin</span>
+        <span className="text-white text-sm sm:text-base">Tracy Qin</span>
       </div>
 
-      <div className="flex flex-row gap-5 text-white">
+      <div className="flex flex-row gap-2 sm:gap-5 text-white text-sm sm:text-base">
         {headers.map((idx) => (
           <button
             key={idx}
