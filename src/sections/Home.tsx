@@ -45,7 +45,7 @@ const AboutMe = () => {
             <span className="text-sm text-blue-200">Prev. Intern @ SafetyCulture, Deloitte Digital</span>
           </div>
 
-          <div className="flex flex-row gap-5 text-white relative z-50">
+          <div className="flex flex-row gap-5 text-white relative z-5">
             <a
               href={'https://www.linkedin.com/in/tracyjqin/'}
               className="linkedin-link"
