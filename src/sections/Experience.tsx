@@ -26,7 +26,7 @@ const Experience = () => {
         Experience
       </h1>
 
-      <div className="flex flex-col gap-2 sm:gap-6 items-center w-full">
+      <div className="flex flex-col gap-4 sm:gap-6 items-center w-full">
         {data.experience.map((exp: ExperienceItem, index: number) => (
           <Card
             index={index}
