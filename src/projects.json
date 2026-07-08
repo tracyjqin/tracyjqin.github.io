@@ -2,9 +2,9 @@
     "projects": [
         {
             "icon": "👼",
-            "name": "Sonny Shelf (WIP)",
+            "name": "Tracy Angels (WIP)",
             "description": "a sonny angel organiser to help me organise my collection",
-            "link": "https://tracyjqin.github.io/sonny-shelf/",
+            "link": "https://tracyjqin.github.io/tracy-angels/",
             "technologies": [
                 "TypeScript",
                 "React"
